@@ -1,0 +1,67 @@
+.success, .error {
+    color: white;
+    padding: 5px;
+    margin: 5px 0 15px 0;
+  }
+
+  .success {
+    background: green;
+  }
+
+  .error {
+    background: red;
+  }
+
+  body {
+    background: linear-gradient(to right, red, blue);
+    height: 100vh;
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    color: white;
+  }
+
+  input[type="submit"] {
+    background: linear-gradient(to right, red, orange);
+    background-size: 400% 400%;
+    animation: gradient-button 5s ease infinite;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+
+  input[type="submit"]:hover {
+    transform: scale(1.1);
+  }
+  
+  input[type="submit"]:active {
+    transform: scale(1.5);
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  @keyframes gradient-button {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
